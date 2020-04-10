@@ -3,6 +3,7 @@ function game(){
     var svg2=document.getElementById("d");
     var svg3=document.getElementById("t");
     var svg4=document.getElementById("c");
+    var aviso=document.getElementById("aviso");
 
     var tablero;
     var turn;
@@ -28,6 +29,21 @@ function game(){
     if(turn=="ordenador"){
         turno((Math.floor(Math.random()*9)),tu);
         turn="yo";
+    }
+    //Aviso sobre quién empieza
+    if(adversario!="ordenador"){
+        if(turno=="yo"){
+            aviso.textContent=yo;
+            aviso.classList.remove("hide");
+            aviso.style.animationName="aviso";
+        }
+        else{
+            aviso.classList.remove("hide");
+            aviso.textContent=tu;       
+            aviso.style.animationName="aviso";
+        }
+        setInterval(function(){aviso.classList.add("hide")},1500);
+        
     }
 
     for(var i=0;i<celdas.length;i++){

@@ -7,7 +7,7 @@ td{
     width: 150px;
     text-align: center;
     vertical-align: middle;
-    font-family: cursive,sans-serif,Arial,'Times New Roman',monospace;
+    font-family: cursive,Arial,'Times New Roman',monospace;
     font-size: 70px;
     cursor: pointer;
 }
@@ -95,18 +95,26 @@ h2{
 
 
 /*animación crucial*/
+#aviso{
+    position:absolute;
+    left:47%;
+    top: 42%;
+    color: rgb(99, 20, 20);
+    font-size: 40px;
+    animation-duration: 1s;
+    opacity: 0;
+}
 #u{
     position: absolute;
     stroke-dasharray: 910;
     stroke-dashoffset: 910;
-    
+    animation-name: trazo;
     }
 #d{
     position: absolute;
     stroke-dasharray: 910;
     stroke-dashoffset: 910;
-    
-        
+    animation-name: trazo;
 
  }
 #t{
@@ -114,13 +122,14 @@ h2{
     stroke-dasharray: 910;
     stroke-dashoffset: 910;
     top: 100px;
-
+    animation-name: trazo;
  }
 #c{
     position: absolute;
     stroke-dasharray: 910;
     stroke-dashoffset: 910;
     top: 105px;
+    animation-name: trazo;
 
  }
  
@@ -130,3 +139,10 @@ h2{
      }
 
  }
+ @keyframes aviso{
+    to{
+        transform: scale(3,3);
+        opacity: 100%;
+    }
+
+}
