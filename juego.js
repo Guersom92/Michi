@@ -32,7 +32,7 @@ function game(){
     }
     //Aviso sobre quién empieza
     if(adversario!="ordenador"){
-        if(turno=="yo"){
+        if(turn=="yo"){
             aviso.textContent=yo;
             aviso.classList.remove("hide");
             aviso.style.animationName="aviso";
