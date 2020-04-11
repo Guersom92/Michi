@@ -95,15 +95,7 @@ h2{
 
 
 /*animación crucial*/
-#aviso{
-    position:absolute;
-    left:47%;
-    top: 42%;
-    color: rgb(99, 20, 20);
-    font-size: 40px;
-    animation-duration: 1s;
-    opacity: 0;
-}
+
 #u{
     position: absolute;
     stroke-dasharray: 910;
@@ -132,17 +124,32 @@ h2{
     animation-name: trazo;
 
  }
- 
- @keyframes trazo{
+ #aviso{
+    position:absolute;
+    left:47%;
+    top: 42%;
+    color: rgb(99, 20, 20);
+    font-size: 40px;
+    animation-duration: 1s;
+    -webkit-animation-duration: 1s;
+    opacity: 0;
+}
+@keyframes trazo{
      to{
          stroke-dashoffset:0;
      }
 
  }
- @keyframes aviso{
+@keyframes aviso{
     to{
         transform: scale(3,3);
         opacity: 100%;
     }
 
+}
+@-webkit-keyframes aviso{
+    to{
+        transform: scale(3,3);
+        opacity: 100%;
+    }
 }
