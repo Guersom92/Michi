@@ -150,7 +150,7 @@ h2{
 }
 @-webkit-keyframes aviso{
     to{
-        transform: scale(3,3);
+        -webkit-transform: scale(3,3);
         opacity: 100%;
     }
 }
