@@ -41,10 +41,13 @@ function game(){
             aviso.classList.remove("hide");
             aviso.textContent=tu;       
             aviso.style.animationName="aviso";
+            
+        
         }
-        setInterval(function(){aviso.classList.add("hide")},1500);
+        
         
     }
+    setTimeout(function(){aviso.remove();},1500);
 
     for(var i=0;i<celdas.length;i++){
         celdas[i].addEventListener('click',turnoClick);
