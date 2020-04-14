@@ -133,7 +133,7 @@ h2{
     animation-duration: 1s;
     -webkit-animation-duration: 1s;
     opacity: 0;
-    display: inline-block;
+    display: block;
 }
 @keyframes trazo{
      to{
@@ -150,7 +150,6 @@ h2{
 }
 @-webkit-keyframes aviso{
     to{
-        
         opacity: 100%;
     }
 }
