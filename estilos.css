@@ -126,10 +126,10 @@ h2{
  }
  #aviso{
     position:absolute;
-    left:47%;
-    top: 42%;
+    left:43%;
+    top: 35%;
     color: rgb(99, 20, 20);
-    font-size: 40px;
+    font-size: 100px;
     animation-duration: 1s;
     -webkit-animation-duration: 1s;
     opacity: 0;
@@ -143,14 +143,14 @@ h2{
  }
 @keyframes aviso{
     to{
-        transform: scale(3,3);
+        
         opacity: 100%;
     }
 
 }
 @-webkit-keyframes aviso{
     to{
-        transform: scale(3,3);
+        
         opacity: 100%;
     }
 }
